@@ -107,50 +107,13 @@ const Hero = () => {
         {/* Photo */}
         <div style={{ width: '100%', height: '320px', overflow: 'hidden' }}>
           <img
-            src="/abhiram.jpg"
+            src="/Abhiram.jepg"
             alt="Veerlapati Abhiram"
             style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }}
           />
         </div>
-
-        {/* Card Info */}
-        <div style={{ padding: '1.25rem 1.5rem' }}>
-          <h3 style={{ fontWeight: 700, fontSize: '1.1rem', marginBottom: '0.25rem' }}>
-            Veerlapati Abhiram
-          </h3>
-          <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', marginBottom: '1.25rem' }}>
-            Java , Html & CSS
-          </p>
-
-          {/* Stats */}
-          <div style={{
-            display: 'grid', gridTemplateColumns: '1fr 1fr',
-            gap: '0.5rem',
-            borderTop: '1px solid rgba(255,255,255,0.08)',
-            paddingTop: '1rem'
-          }}>
-            <div>
-              <p style={{ color: 'var(--accent)', fontSize: '1.6rem', fontWeight: 800, lineHeight: 1 }}>8.6</p>
-              <p style={{ color: 'var(--text-muted)', fontSize: '0.8rem', marginTop: '0.3rem' }}>CGPA</p>
-            </div>
-            <div>
-              <p style={{ color: 'var(--accent)', fontSize: '1.6rem', fontWeight: 800, lineHeight: 1 }}>91.8%</p>
-              <p style={{ color: 'var(--text-muted)', fontSize: '0.8rem', marginTop: '0.3rem' }}>12th</p>
-            </div>
-          </div>
-        </div>
+        
       </div>
-
-      <style>{`
-        @media (max-width: 768px) {
-          section#home {
-            flex-direction: column !important;
-            align-items: center !important;
-            padding: 5rem 1.5rem 2rem !important;
-            text-align: center;
-          }
-        }
-      `}</style>
     </section>
   )
 }

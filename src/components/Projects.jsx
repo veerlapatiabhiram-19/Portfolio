@@ -3,32 +3,35 @@ import React, { useState } from 'react'
 const projects = [
   {
     title: 'Property Management System',
-    description: 'Designed an intuitive hotel booking interface with interactive prototypes focusing on HTML and CSS.',
-    tech: ['HTML', 'CSS', 'JavaScript'],
+    description: 'A property management system that handles listings, rentals, and tenant information.',
+  
+
     details: [
-      'Created comprehensive HTML, CSS and JavaScript for hotel booking system',
-      'Focused on user-friendly interface and seamless booking flow',
-      'Implemented responsive design principles',
-      'Designed interactive prototypes for user testing',
+      'Developed a property management system for landlords and property managers',
+      'Handled property listings, rental tracking, and tenant data efficiently',
+      'Improved system usability with a clean and structured interface',
+      'Ensured smooth navigation and data handling across modules',
     ],
+
     features: [
-      'Room search and filtering system',
-      'Interactive booking calendar',
-      'Guest information management',
-      'Payment integration interface',
-      'Booking confirmation system',
+      'Property listing and management system',
+      'Tenant information tracking',
+      'Rental management and updates',
+      'Search and filtering for properties',
+      'User-friendly dashboard for landlords',
     ],
-    design: [
-      'Clean, modern interface with intuitive navigation',
-      'Mobile-first responsive design approach',
-      'Accessibility-focused design principles',
-      'Interactive elements with smooth animations',
-      'Consistent branding and visual hierarchy',
-    ],
+
+   design: [
+  'Efficient handling of property listings and tenant records',
+  'Organized data management for rentals and users',
+  'Optimized system flow for better performance',
+  'Structured modules for scalability and maintenance',
+  'Reliable data handling across different operations',
+],
+
     github: 'https://github.com/veerlapatiabhiram-19',
   }
 ]
-
 const ProjectCard = ({ project }) => {
   const [expanded, setExpanded] = useState(false)
 
@@ -53,20 +56,6 @@ const ProjectCard = ({ project }) => {
         {project.description}
       </p>
 
-      {/* Tech Stack */}
-      <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginBottom: '1.25rem' }}>
-        {project.tech.map(t => (
-          <span key={t} style={{
-            padding: '0.25rem 0.75rem',
-            background: 'rgba(108,99,255,0.15)',
-            border: '1px solid var(--border)',
-            borderRadius: '999px',
-            fontSize: '0.8rem',
-            color: 'var(--accent)'
-          }}>{t}</span>
-        ))}
-      </div>
-
       {/* Links */}
       <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', marginBottom: '1.25rem' }}>
         <a href={project.github} target="_blank" rel="noopener noreferrer" style={{
@@ -74,16 +63,6 @@ const ProjectCard = ({ project }) => {
           background: 'var(--primary)', color: '#fff',
           borderRadius: '8px', fontSize: '0.85rem', fontWeight: 600
         }}>GitHub Repository ↗</a>
-        <a href={project.figma} style={{
-          padding: '0.5rem 1.2rem',
-          border: '1px solid var(--border)', color: 'var(--text)',
-          borderRadius: '8px', fontSize: '0.85rem'
-        }}>Figma Design</a>
-        <a href={project.docs} style={{
-          padding: '0.5rem 1.2rem',
-          border: '1px solid var(--border)', color: 'var(--text)',
-          borderRadius: '8px', fontSize: '0.85rem'
-        }}>Documentation</a>
       </div>
 
       {/* Toggle Details */}
