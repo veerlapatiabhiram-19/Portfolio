@@ -41,15 +41,10 @@ const Hero = () => {
             Get in Touch
           </a>
         </div>
-        <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-          {['C', 'HTML', 'CSS', 'Python'].map(tag => (
-            <span key={tag} style={{ padding: '0.45rem 1.2rem', background: 'rgba(255,255,255,0.07)', border: '1px solid rgba(255,255,255,0.12)', borderRadius: '999px', fontSize: '0.9rem', color: 'var(--text)', fontWeight: 500 }}>{tag}</span>
-          ))}
-        </div>
       </div>
 
       {/* RIGHT SIDE — Photo Only */}
-      <div style={{ flexShrink: 0, width: '350px', height: '400px', background: 'linear-gradient(160deg, #1e2a3a, #111827)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 30px 60px rgba(0,0,0,0.5)' }}>
+      <div style={{ flexShrink: 0, width: '340px', height: '340px', background: 'linear-gradient(160deg, #1e2a3a, #111827)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 30px 60px rgba(0,0,0,0.5)' }}>
         <img src="/Abhiram.png" alt="Veerlapati Abhiram" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }} />
       </div>
 

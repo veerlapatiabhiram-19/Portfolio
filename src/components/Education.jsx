@@ -18,7 +18,7 @@ const education = [
   {
     degree: 'SSC (Class 10)',
     institution: 'Shastra High School',
-    score: '',
+    score: 'CGPA: 9.5',
     icon: '🏫',
     color: '#ff6b6b'
   },

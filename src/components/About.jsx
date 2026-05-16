@@ -22,30 +22,14 @@ const About = () => {
             with a strong foundation in programming and web development.
           </p>
           <p style={{ color: 'var(--text-muted)', fontSize: '1rem', lineHeight: '1.8', marginBottom: '1rem' }}>
-            I enjoy building <strong style={{ color: 'var(--text)' }}>innovative projects</strong> with strong skills in
-            Java, HTML, CSS, and JavaScript. I'm passionate about creating clean, user-friendly interfaces.
+                I enjoy turning ideas into reality through <strong style={{ color: 'var(--text)' }}>clean and creative web experiences</strong>. With a strong foundation in HTML,CSS,JavaScript,and Python I focus on building interfaces that are both functional and visually appealing.
           </p>
           <p style={{ color: 'var(--text-muted)', fontSize: '1rem', lineHeight: '1.8' }}>
-            Currently focused on expanding my skills in full stack development and UI/UX design principles.
-          </p>
-
-          <div style={{ display: 'flex', gap: '1rem', marginTop: '1.5rem', flexWrap: 'wrap' }}>
-            {[
-              { label: 'University', value: 'KL University' },
-              { label: 'CGPA', value: '8.6' },
-              { label: 'GitHub', value: 'veerlapatiabhiram-19' },
-            ].map(item => (
-              <div key={item.label} style={{
-                background: 'var(--bg-card2)', borderRadius: '8px',
-                padding: '0.6rem 1rem', border: '1px solid var(--border)'
-              }}>
-                <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>{item.label}</p>
-                <p style={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--primary)' }}>{item.value}</p>
-              </div>
-            ))}
+            Always curious and eager to grow — currently exploring <strong style={{ color: 'var(--text)' }}>Python and modern web development</strong> to craft smarter, more user-centered solutions.
+           </p>
+         
           </div>
         </div>
-      </div>
     </section>
   )
 }
