@@ -27,7 +27,7 @@ const Hero = () => {
           B.Tech CSE Student , Frontend Developer
         </p>
         <p style={{ color: 'var(--text-muted)', fontSize: '1rem', lineHeight: 1.7, marginBottom: '2rem', maxWidth: '450px' }}>
-          Skilled in C and Intermediate in Python.
+          Proficient in C with hands-on experience in Python
         </p>
         <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '2.5rem' }}>
           <a href="#projects" style={{ padding: '0.8rem 2rem', background: 'linear-gradient(135deg, var(--primary), var(--accent))', color: '#fff', borderRadius: '8px', fontWeight: 700, fontSize: '1rem', boxShadow: '0 4px 20px rgba(108,99,255,0.4)', transition: 'transform 0.2s, box-shadow 0.2s' }}
