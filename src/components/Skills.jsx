@@ -11,7 +11,7 @@ const Skills = () => {
           Technologies I've learned and worked with
         </p>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', justifyContent: 'center' }}>
-          {['C', 'Java', 'HTML', 'CSS', 'JavaScript', 'React', 'Spring Boot', 'Git'].map(tag => (
+          {['C', 'Python', 'HTML', 'CSS', 'JavaScript', 'Visual Studio Code', 'Git','SQL'].map(tag => (
             <span key={tag} style={{ padding: '0.4rem 1rem', background: 'rgba(108,99,255,0.15)', border: '1px solid var(--border)', borderRadius: '999px', fontSize: '0.85rem', color: 'var(--primary)', fontWeight: 500 }}>{tag}</span>
           ))}
         </div>

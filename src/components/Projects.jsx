@@ -4,7 +4,7 @@ const projects = [
   {
     title: 'TechPills',
     description: 'A multimodal web platform that provides text, image, and voice processing services in a unified interface using a pill-based modular architecture.',
-    tech: ['HTML', 'CSS', 'JavaScript', 'AI APIs'],
+    tech: ['HTML', 'CSS', 'JavaScript','React'],
     details: [
       'Designed and developed a pill-based modular platform integrating text, image, and voice AI functionalities into a single unified web interface.',
       'Implemented text processing features including summarization, grammar correction, keyword extraction, sentiment and emotion detection, and multilingual support.',

@@ -24,10 +24,10 @@ const Hero = () => {
           Veerlapati<br />Abhiram
         </h1>
         <p style={{ color: 'var(--text-muted)', fontSize: '1.05rem', lineHeight: 1.7, marginBottom: '0.8rem', maxWidth: '480px' }}>
-          B.Tech CSE Student , Java Developer , html and CSS Developer also
+          B.Tech CSE Student , Frontend Developer
         </p>
         <p style={{ color: 'var(--text-muted)', fontSize: '1rem', lineHeight: 1.7, marginBottom: '2rem', maxWidth: '450px' }}>
-          I learned perfectly C , java , html and css .
+          Skilled in C and Intermediate in Python.
         </p>
         <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '2.5rem' }}>
           <a href="#projects" style={{ padding: '0.8rem 2rem', background: 'linear-gradient(135deg, var(--primary), var(--accent))', color: '#fff', borderRadius: '8px', fontWeight: 700, fontSize: '1rem', boxShadow: '0 4px 20px rgba(108,99,255,0.4)', transition: 'transform 0.2s, box-shadow 0.2s' }}
@@ -42,7 +42,7 @@ const Hero = () => {
           </a>
         </div>
         <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-          {['Html', 'CSS', 'Java', 'C'].map(tag => (
+          {['C', 'HTML', 'CSS', 'Python'].map(tag => (
             <span key={tag} style={{ padding: '0.45rem 1.2rem', background: 'rgba(255,255,255,0.07)', border: '1px solid rgba(255,255,255,0.12)', borderRadius: '999px', fontSize: '0.9rem', color: 'var(--text)', fontWeight: 500 }}>{tag}</span>
           ))}
         </div>
