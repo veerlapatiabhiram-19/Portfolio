@@ -2,36 +2,60 @@ import React, { useState } from 'react'
 
 const projects = [
   {
-    title: 'Property Management System',
-    description: 'A property management system that handles listings, rentals, and tenant information.',
-  
-
+    title: 'TechPills',
+    description: 'A multimodal web platform that provides text, image, and voice processing services in a unified interface using a pill-based modular architecture.',
+    tech: ['HTML', 'CSS', 'JavaScript', 'AI APIs'],
     details: [
-      'Developed a property management system for landlords and property managers',
-      'Handled property listings, rental tracking, and tenant data efficiently',
-      'Improved system usability with a clean and structured interface',
-      'Ensured smooth navigation and data handling across modules',
+      'Designed and developed a pill-based modular platform integrating text, image, and voice AI functionalities into a single unified web interface.',
+      'Implemented text processing features including summarization, grammar correction, keyword extraction, sentiment and emotion detection, and multilingual support.',
+      'Built image processing pills including OCR, background removal, grayscale conversion, handwriting recognition, and document type detection.',
+      'Developed voice processing features such as voice-to-text conversion, emotion and intent detection from speech, keyword extraction, and voice command processing.',
     ],
-
     features: [
-      'Property listing and management system',
-      'Tenant information tracking',
-      'Rental management and updates',
-      'Search and filtering for properties',
-      'User-friendly dashboard for landlords',
+      'Text summarization, grammar correction & keyword extraction',
+      'Sentiment and emotion detection with multilingual support',
+      'OCR, background removal & handwriting recognition',
+      'Grayscale conversion & document type detection',
+      'Voice-to-text, emotion & intent detection from speech',
+      'Voice command processing & keyword extraction',
     ],
-
-   design: [
-  'Efficient handling of property listings and tenant records',
-  'Organized data management for rentals and users',
-  'Optimized system flow for better performance',
-  'Structured modules for scalability and maintenance',
-  'Reliable data handling across different operations',
-],
-
-    github: 'https://github.com/veerlapatiabhiram-19',
-  }
+    design: [
+      'Pill-based modular architecture for clean separation of features',
+      'Unified interface combining text, image and voice in one platform',
+      'User-friendly navigation across different processing modules',
+      'Consistent and modern visual presentation throughout',
+      'Responsive layout optimized for all screen sizes',
+    ],
+    github: 'https://github.com/TechPills-dev/Techpills-Development',
+  },
+  {
+    title: 'Image Gallery',
+    description: 'A simple front-end image gallery website built using HTML and CSS, allowing users to browse and view images across different categories.',
+    tech: ['HTML', 'CSS'],
+    details: [
+      'Designed and developed a responsive image gallery website featuring diverse collections such as Portrait, Nature, Lifestyle, and Creative galleries.',
+      'Created an interactive user experience with visually appealing sections and dynamic image displays.',
+      'Built user-friendly navigation for seamless browsing across categories.',
+      'Maintained a polished and consistent design through balanced layouts and cohesive color palettes.',
+    ],
+    features: [
+      'Portrait, Nature, Lifestyle & Creative gallery categories',
+      'Responsive grid layout for all screen sizes',
+      'Dynamic image display with smooth browsing',
+      'User-friendly navigation across categories',
+      'Modern visual presentation with cohesive color palette',
+    ],
+    design: [
+      'Clean and balanced grid-based layout',
+      'Cohesive color palettes across all gallery sections',
+      'Modern visual presentation with consistent styling',
+      'Smooth and intuitive user experience',
+      'Fully responsive design for mobile and desktop',
+    ],
+    github: 'https://github.com/veerlapatiabhiram-19/Image-Gallery',
+  },
 ]
+
 const ProjectCard = ({ project }) => {
   const [expanded, setExpanded] = useState(false)
 
@@ -52,11 +76,26 @@ const ProjectCard = ({ project }) => {
       <h3 style={{ fontSize: '1.3rem', fontWeight: 700, marginBottom: '0.75rem', color: 'var(--primary)' }}>
         {project.title}
       </h3>
+
       <p style={{ color: 'var(--text-muted)', marginBottom: '1rem', lineHeight: '1.7' }}>
         {project.description}
       </p>
 
-      {/* Links */}
+      {/* Tech Stack */}
+      <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginBottom: '1.25rem' }}>
+        {project.tech.map(t => (
+          <span key={t} style={{
+            padding: '0.25rem 0.75rem',
+            background: 'rgba(108,99,255,0.15)',
+            border: '1px solid var(--border)',
+            borderRadius: '999px',
+            fontSize: '0.8rem',
+            color: 'var(--accent)'
+          }}>{t}</span>
+        ))}
+      </div>
+
+      {/* GitHub Link */}
       <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', marginBottom: '1.25rem' }}>
         <a href={project.github} target="_blank" rel="noopener noreferrer" style={{
           padding: '0.5rem 1.2rem',

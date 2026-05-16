@@ -18,11 +18,11 @@ const Contact = () => {
     {
       title: 'Email', href: 'mailto:veerlapatiabhiram@gmail.com', color: '#EA4335',
   icon: <svg viewBox="0 0 48 48" width="22" height="22">
-    <path fill="#EA4335" d="M6 40V16l18 13L42 16v24H6z"/>
-    <path fill="#FBBC05" d="M6 16l18 13L42 16"/>
-    <path fill="#34A853" d="M6 40h36V16L24 29 6 16v24z"/>
-    <path fill="#4285F4" d="M6 16v24l18-11"/>
-    <path fill="#EA4335" d="M42 16v24L24 29"/>
+    <path fill="blue" d="M6 40V16l18 13L42 16v24H6z"/>
+    <path fill="blue" d="M6 16l18 13L42 16"/>
+    <path fill="blue" d="M6 40h36V16L24 29 6 16v24z"/>
+    <path fill="blue" d="M6 16v24l18-11"/>
+    <path fill="blue" d="M42 16v24L24 29"/>
   </svg>
     },
     {
